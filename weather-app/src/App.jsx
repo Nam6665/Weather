@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Search from "./components/search/search.jsx";
 import CurrentWeather from "./components/current-weather/current-weather.jsx";
-import { geoApiOptions, geoUrl, WEATHER_API_URL, WEATHER_API_KEY } from "./api"; // Adjust the import path as necessary
+import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import Forecast from "./components/forecast/forecast.jsx";
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <div className='container'>
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
