@@ -1,6 +1,30 @@
 .container {
-  max-width: 1080px;
-  margin: 20px 0;
-  padding-left: 20px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.current-weather {
+  margin-top: -80px;
+}
+
+.weather-forecast-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 15px 0 0 50px;
+}
+
+.forecast-container {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
